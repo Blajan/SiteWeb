@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Site web</title>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="HTML,CSS, JavaScript">
+        <meta name="description" content="home page, fullscreen, contact icon, greet, my skills, opinion, my way, contact side">
+        <script src="https://kit.fontawesome.com/974f1dd5d8.js" crossorigin="anonymous"></script>
+        <link href='https://fonts.googleapis.com/css?family=Atma' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="margin: 0px; font-family: 'Atma'; background-color: #d3d3d3;">
+
+
+        <!-- Home -->
+        <div class="homePage" id="home">
+            <div class="triangle"></div>
+
+            <div class="imageHome">
+                <div class="darkBg"></div>
+                <h2>I'm Blajan Razvan</h2>
+                <p>I'm passionate <span style="color: #eca013;">Web Development</span></p>
+                <div class="navBar" id="myNav">
+                    <ul>
+                        <li onclick="closeNav()"><h3>X</h3></li>
+                        <li><a href="#toGreet">To greet</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#feedback">Feedback</a></li>
+                        <li><a href="#roadmap">Roadmap</a></li>
+                        <li><a href="#footer">Footer</a></li>
+                    </ul>
+                </div>
+                <span id="show" onclick="openNav()">
+                    &#9776;
+                </span>
+                <img src="Galery_site/mee.jpg" alt="Image with me">
+            </div>
+
+            <div class="aboutBg">
+                <img src="Galery_site/me.jpg" alt="Image with me" id="ImageWithMe">
+                <h2>About</h2>
+                <p>My name is Blajan Razvan, I am 23 years old, I am Romanian and I am a person motivated, ambitious and persevering enough 
+                    to achieve my goals. I am the person who likes to get out of the comfort zone, because I know that area does not bring any 
+                    benefit and I am proud of that because that forces me to evolve. In 5 years, and not only, I will be a very successful person, 
+                    working in a big company, doing what I like, sitting with the right people and growing every day.
+                </p>    
+                <a href="https://www.linkedin.com/in/razvan-blajan-35255a235/"><i class="fa-brands fa-linkedin-in" id="linkedin" title="Linkedin"></i></a>
+                <a href="https://github.com/Blajan"><i class="fa-brands fa-git" id="gitHub" title="GitHub"></i></a>
+                <a href="file:///C:/Users/40747/Desktop/CV/CV%20engleza/Bl%C4%83jan_R%C4%83zvan_-_Full_Stack_Developer%20(10).pdf"><i class="fa-solid fa-file" id="CV" title="CV"></i></a>
+            </div>
+
+            <button class="buttonScreen" id="closeFull" onclick="closeFullscreen();"><i class="fa-solid fa-compress"></i></button>
+            <button class="buttonScreen" id="openFull" onclick="openFullscreen()"><i class="fa-solid fa-expand"></i></button>
+
+        </div>
+        <!-- Home -->
+
+
+        <!-- Greetings -->
+        <div class="bgGreetings" id="toGreet">
+            <div class="greetings">
+                <img src="Galery_site/Greet.jpg" alt="Greet">
+                <div class="darkBackground">
+                    <h2>Nice to meet you</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Greetings -->
+
+
+        <!-- Skills -->
+        <div class="skills" id="skills">
+            <img src="Galery_site/skills.jpg" alt="Skills">
+            <div class="darkBgSkills"></div>
+            <h2 id="disappearH2">These are the skills learned in recent years that I think will help me in my IT career.</h2>
+
+            <div class="boxText" id="team">
+                <p>Working in an IT company, the ability to communicate and work in a team are indispensable. 
+                    I managed to develop on this side. I think I would be able to integrate quite easily into a new team.
+                    I consider myself an altruistic person, who puts the team's goals on their first and personal ones on the secondary.
+                </p>
+            </div>
+
+            <div class="boxText" id="continuousDevelopment">
+                <p>In the last year I have become familiar with the idea of continuous development. 
+                    Currently I make the most of every moment when I can learn something. This skill is my greatest achievement. 
+                    It will help me to always be curious, to learn daily and to get out of my comfort zone to reach success.
+                </p>
+            </div>
+
+            <div class="boxText" id="communication">
+                <p>At the job of programmer and not only, I came into contact with many people and I managed to learn from them a 
+                    lot of new things and default the ability to communicate, where I progress daily. When I communicate with a person 
+                    I am careful to learn things, words or even new concepts, this forms me and helps me to see things from a different perspective. 
+                </p>
+            </div>
+                
+            <div class="boxText" id="solving">
+                <p>I like to face problems and strive to solve them, I know that this makes me better and forces me to grow.
+                    Problem solving is part of the day-to-day work of a programmer and I believe that everyone in this field should manage on this side.
+                </p>
+            </div>
+
+            <div class="boxText" id="learn">
+                <p>In the last year I've realized that I love learning and that's what I always want to do, not do things that cap me.
+                    Due to the fact that I like to constantly learn, I managed to get acquainted with idea of learning, so it's much easier for me to learn.
+                </p>
+            </div>
+
+
+            <div class="boxSkills" id="team">
+                <i class="fa-solid fa-people-group"></i>
+                <h2>Work in team</h2>
+                <p>Without this skill it is difficult to work in IT.</p>
+                <button type="button" onclick="functionSkills('team')">Load more</button>
+            </div>
+
+            <div class="boxSkills" id="continuousDevelopment">
+                <i class="fa-solid fa-brain"></i>
+                <h2>Continuous Development</h2>
+                <p>It helps you to get closer to others.</p>
+                <button type="button" onclick="functionSkills('continuousDevelopment')">Load more</button>
+            </div>
+
+            <div class="boxSkills" id="communication">
+                <i class="fa-solid fa-comments"></i>
+                <h2>Communication</h2>
+                <p>Communication is important in any field of activity.</p>
+                <button type="button" onclick="functionSkills('communication')">Load more</button>
+            </div>
+
+            <div class="boxSkills" id="solving">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <h2>Problem solving</h2>
+                <p>Important hard skills in the career of a programmer.</p>
+                <button type="button" onclick="functionSkills('solving')">Load more</button>
+            </div>
+
+            <div class="boxSkills" id="learn">
+                <i class="fa-brands fa-leanpub"></i>
+                <h2>Fast learner</h2>
+                <p>An important skill that helps you count in the industry.</p>
+                <button type="button" onclick="functionSkills('learn')">Load more</button>
+            </div>
+
+        </div>
+        <!-- Skills -->
+
+
+        <!-- Feedback -->
+        <div class="feedbackBackground" id="feedback">
+            <img src="Galery_site/Office.jpg" alt="Office">
+            <img src="Galery_site/Office.jpg" alt="Office" style="top: 50%; transform: rotateX(180deg);">
+            <div class="bgFeedback"></div>
+            <h2 id="textFeedback">The opinion of the people I worked with</h2>
+
+            <div class="feedbackBox" id="animationFirst">
+                <img src="Galery_site/Marius.jpg" alt="Marius">
+                <div class="animation" onclick="functionText(feedbackMarius)">
+                    <p>Feedback<br>Marius</p>
+                </div>
+            </div>
+    
+            <div class="feedbackBox" id="animationSecond">
+                <img src="Galery_site/Vlad.jpg" alt="Vlad">
+                <div class="animation" onclick="functionText(feedbackVlad)">
+                    <p>Feedback<br>Vlad</p>
+                </div>
+            </div>
+    
+            <div class="feedbackBox" id="animationThird">
+                <img src="Galery_site/Bogdan.jpg" alt="Bogdan">
+                <div class="animation" onclick="functionText(feedbackBogdan)">
+                    <p>Feedback<br>Bogdan</p>
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+                feedbackMarius = "Being from the same city, I know Razvan for a very long time. I have a very good impression of him. I know him as a devoted, motivated man, involved in the things he engages in. I can say about him that he is responsible and what he promises he does. He does not shy away from work and likes to grow up in terms of mindset.";
+                feedbackVlad = "Razvan is a very disciplined, punctual and responsible person.His likes to help people as much as possible. I like the fact that he easily gets out of his comfort zone to get better. I like his way of thinking and how he acts in different situations.";
+                feedbackBogdan = "Razvan is a reliable friend, he helps you every time you ask for his help. He likes to work extra to be successful in that area. Knowing him closely, I believe that he will become a very successful person.";
+            function functionText(feedback) {
+                document.getElementById("textFeedback").innerHTML = feedback;
+            }
+        </script>
+        <!-- Feedback -->
+
+
+        <!-- My road -->
+        <div class="roadmap">
+            <img src="Galery_site/roadMap.jpg">
+
+            <div class="stageLeft" id="stage1">
+                <div class="bgStage"></div>
+                <p>In 5 years I see myself writing high quality code and developing new applications for a corporation. 
+                I think that in 5 years I will have a mentality of continuous growth.
+                </p>
+            </div>
+
+            
+            <div class="stageRight" id="stage2">
+                <div class="bgStage"></div>
+                <p>In 10 years I will have my company, I want to have a successful product and also to be a successful man myself.
+                    I don't want to regret the fact that I didn't act and I don't want the years to go by without living them to the fullest.</p>
+            </div>
+
+            <div class="stageLeft" id="stage3">
+                <div class="bgStage"></div>
+                <p>2022 is the year in which I rediscovered myself and found purpose in life.
+                    I decided to get involved in IT this year, to deepen my knowledge of English and to develop on the soft skills side.
+                </p>
+            </div>
+
+            <div class="stageRight" id="stage4">
+                <div class="bgStage"></div>
+                <p>I set out to make 2023 my most productive year. To grow in each field of activity, to be more 
+                    efficient and to expand my networking group.
+                </p>
+            </div>
+
+            <div class="stageLeft" id="stage5">
+                <div class="bgStage"></div>
+                <p>In 2017 I joined the military school of gendarme non-commissioned officers, and in 2018 I will be assigned 
+                    to Bucharest and work in the Romanian Gendarmerie. Also in that year, 2018, I started studying law.
+                </p>
+            </div>
+
+            <div class="stageRight" id="stage6">
+                <div class="bgStage"></div>
+                <p>Currently, the year 2022, I have an experience of one year and four months in web developer, I graduated from law school and 
+                    I have 4 years of experience in the Romanian Gendarmerie.
+                </p>
+            </div>
+
+        </div>
+        <!-- My road -->
+
+
+        <!-- Footer -->
+        <div class="footer" id="footer">
+            <h2>Contact</h2>
+            <p>I hope that I have aroused your interest and that you will decide to collaborate in the future.</p>
+
+            <a href="https://www.facebook.com/razvan.blajan.96/" target="_blank" id="icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/r_blajan/" target="_blank" id="icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/Blajan8" target="_blank" id="icon"><i class="fa-brands fa-twitter"></i></a>
+
+            <a href="#home">Home</a>
+            <a href="#toGreet">To greet</a>
+            <a href="#skills">Skills</a>
+            <a href="#feedback">Feedback</a>
+            <a href="#roadmap">Roadmap</a>
+
+        </div>
+        <!-- Footer -->
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
+
+
